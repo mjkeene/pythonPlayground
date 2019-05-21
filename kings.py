@@ -27,7 +27,7 @@ names = input('Enter a list of space separated names: ').title().split(" ")
 # Remove any extra spaces a user may have entered
 names = [name for name in names if name != '']
 
-# Multiply the names list to have > 52 items
+# Multiply the names list to have >= 52 items
 length = -(-52 // len(names))
 names *= length
 
@@ -50,8 +50,7 @@ def flag():
     else:
         return True
 
-count = 0
-turn = 1
+count, turn = 0, 1
 
 while flag():
     if count >= num:
