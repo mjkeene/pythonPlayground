@@ -32,7 +32,7 @@ length = -(-52 // len(names))
 names *= length
 
 # This number will determine the final turn
-num = random.randint(20,52)
+num = random.randint(20, 52)
 
 # Instantiate the deck
 deck = FrenchDeck()
